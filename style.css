@@ -1,0 +1,398 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0; }
+.container{
+    display: flex;
+    justify-content: space-around;
+
+}
+.Featured-section{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    color: grey;
+    gap: 20px;
+    padding-top: 10px;
+
+}
+.p3{
+    font-weight: 40px;
+    color: grey;
+    font-size: 20px;
+}
+.slider-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+.styled-div {
+    flex: 0 0 auto;
+    width: 600px; /* Adjust as needed */
+    height: 300px; /* Adjust as needed */
+    margin-right: 20px; /* Spacing between slides */
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust background color and opacity */
+    color: white;
+    scroll-snap-align: start;
+    padding: 20px;
+}
+.section{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+.styled-div {
+    background-image: url('./news-4.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+   width: 600px;
+   border-radius: 20px;
+    align-items: end;
+    justify-content: center;
+    
+    /* text-align: end; */
+    /* Example text color */
+    /* Add any other styles you want */
+}
+
+.featured-box {
+    width: 300px; /* Adjust width as needed */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.4); /* Adjust shadow properties as needed */
+}
+
+
+.featured-box img {
+    width: 100%;
+    height: auto;
+}
+
+.featured-box .content {
+    padding: 20px;
+}
+
+.featured-box p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.featured-box h3 {
+    color: #333;
+    font-size: 18px;
+    margin: 0;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+    display: flex;
+    justify-content: center;
+    padding-top: 40px; gap: 20px; /* Adjust the gap between items */
+}
+
+/* Simplified CSS styles */
+
+/* Footer widget */
+.footer-widget {
+    margin-bottom: 30px;
+}
+
+/* Footer widget headings */
+.footer-widget h5 {
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+/* Footer widget paragraphs */
+.footer-widget p {
+    margin-bottom: 10px;
+}
+
+/* Tagcloud links */
+.footer-widget .tagcloud a {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #000;
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+/* Footer copy right section */
+.footer-copy-right {
+    margin-top: 30px;
+}
+
+/* Footer copy right paragraphs */
+.footer-copy-right p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.post-box {
+    display: flex;
+    width: 600px;
+    /* Adjusted height for better visibility */
+    min-height: 180px; /* Example height, adjust as necessary */
+    background-color: #f0f0f0; /* Light grey background */
+    overflow: hidden; /* Ensures no content spills outside the border */
+  }
+  
+  .post-image {
+    width: 200px; /* Adjust width as necessary */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 30px;
+    height: 130px;
+    padding: 20px; /* Ensures the image covers the area nicely */
+  }
+  
+  .content {
+    padding: 10px; /* Padding for text content */
+    display: flex;
+    flex-direction: column; /* Stack heading and paragraph vertically */
+    justify-content: center; /* Center content vertically */
+  }
+  
+  h2 {
+    margin: 0 0 10px 0; /* Adds space between heading and paragraph */
+    font-size: 18px; /* Adjust based on preference */
+  }
+  
+  p {
+    margin: 0; /* Removes default paragraph margin */
+    font-size: 14px; /* Adjust based on preference */
+  }
+  .post{
+    background-color: #f0f0f0;
+    display: flex;
+    gap: 150px;
+     /* Light grey background */
+  }
+  .p2{
+    font-weight: 40px;
+    color: grey;
+    font-size: 20px;
+    padding-left: 20px;
+    position: relative; /* Required for absolute positioning of the ::after element */
+    display: inline-block; 
+}
+
+  
+  .p2::after {
+    content: ''; /* Required for the element to display */
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px; /* Adjusts the position of the line below the text */
+    height: 1px; /* Thickness of the line */
+    background: grey; /* Color of the line */
+    width: 400px; /* This makes the line as wide as the text; adjust as needed */
+  }
+.container2{
+    padding: 20px;
+    background-color: #f0f0f0;
+    margin-top: 20px; /* Light grey background */
+
+
+}
+.box {
+    display: flex;
+    align-items: center; /* Centers the items vertically */
+    width: 350px;
+    height: 150px;
+    background-color: white; /* Light grey background */
+    border-radius: 10px; /* Light border for the box */
+    overflow: hidden;
+    margin-top: 20px; /* Ensures content does not spill outside the box */
+  }
+  
+  .text {
+    flex-grow: 1; /* Allows the paragraph to fill available space */
+    margin: 0 10px; /* Adds some spacing around the text */
+    font-size: 15px; /* Small font size due to limited space */
+    
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+  }
+  
+  .box-image {
+    width: 120px; /* Auto width to maintain aspect ratio */
+    height: 120px;
+    border-radius: 10px; /* Full height of the box */
+    object-fit: cover;
+    padding-right: 13px;
+    
+     /* Cover the designated area without losing aspect ratio */
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fadeInUp {
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+
+  .box, .featured-box, .styled-div {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+}
+
+.box:hover, .featured-box:hover, .styled-div:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1); /* Add shadow for depth */
+}
+img {
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for transform and opacity */
+}
+
+img:hover {
+    transform: scale(1.05); /* Slightly enlarge images on hover */
+    opacity: 0.9; /* Slightly reduce opacity on hover */
+}
+.post-image {
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for transform and opacity */
+}
+
+.post-image:hover {
+    transform: scale(1.1); /* Slightly enlarge images on hover */
+    opacity: 0.8; /* Slightly reduce opacity on hover */
+}
+.grid-section {
+    display: grid;
+    grid-template-columns: repeat(3, 300px); /* Creates 3 columns */
+    gap: 20px; /* Space between boxes */
+    justify-content: center; /* Center the grid in the section */
+    padding: 20px;
+    background-color: white; /* Padding around the entire grid */
+  }
+  
+  .grid-box {
+    display: flex; /* Use flex layout for the box content */
+    width: 300px;
+    height: 80px;
+    background-color: white; /* Example background color */
+    border-radius: 10px; /* Rounded corners for aesthetic */
+    overflow: hidden; /* Ensure contents don't spill out */
+    padding: 10px; /* Space inside the box */
+  }
+  
+  .grid-box img {
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    width: 30%; /* Width of the image inside the box */
+    height: 100%; /* Image height to fill the box */
+    object-fit: cover; /* Cover the designated area */
+    border-radius: 5px; /* Optional: rounded corners for the image */
+  }
+  
+  .grid-box p {
+    margin-left: 10px; /* Space between image and text */
+    flex-grow: 1; /* Allows the paragraph to fill the remaining space */
+    display: flex; /* Use flex layout to vertically center text */
+    align-items: center; /* Center text vertically */
+    font-size: 14px; /* Adjust font size as needed */
+  }
+  
+  .p4{
+    font-weight: 40px;
+    color: grey;
+    font-size: 20px;
+    padding-left: 20px;
+    position: relative; /* Required for absolute positioning of the ::after element */
+    display: inline-block; 
+}
+
+  
+.p4::after {
+    content: ''; /* Required for the element to display */
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px; /* Adjusts the position of the line below the text */
+    height: 1px; /* Thickness of the line */
+    background: grey; /* Color of the line */
+    width: 0; /* Initially set width to 0 */
+    transition: width 0.5s; /* Smooth transition for the width property */
+}
+
+.p4:hover::after {
+    width: 100%; /* Increase width to 100% on hover */
+}
+.categories-section {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: white;
+    overflow-x: hidden; /* Hide horizontal overflow */
+    white-space: nowrap; /* Prevent items from wrapping */
+  }
+  
+  .category-box {
+    width: 400px;
+    height: 110px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 20px; /* Adjust spacing between boxes */
+    transition: transform 0.5s; /* Smooth transition for animation */
+  }
+  
+  .category-content {
+    display: flex;
+    padding: 10px;
+  }
+  
+  .category-content img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 10px;
+  }
+  
+  .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .text-content h3 {
+    margin: 0;
+  }
+  
+  .text-content p {
+    margin: 5px 0;
+  }
+  
+  /* Animation */
+  .categories-section:hover .category-box {
+    transform: translateX(-420px); /* Move all boxes to the left when hovering */
+  }
+  
+  
+  
+  
+  
+  
+  .div{
+    padding: 20px;
+    background-color: white;
+  }
+  
+
+
+
+
