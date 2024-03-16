@@ -3,6 +3,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     background-color: #f0f0f0; }
+    
 .container{
     display: flex;
     justify-content: space-around;
@@ -384,15 +385,53 @@ img:hover {
   
   
   
-  
-  
-  
   .div{
     padding: 20px;
     background-color: white;
   }
   
+  .nav{
+    display: flex;
+    justify-content: center;
+    gap:70px;
+    padding-right: 200px;
+}
 
+.div1{
+    width:100%;
+    height:500px;
+    background-color:rgb(245, 247, 248);
+    padding-left:30px ;
+    margin-top: 30px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.animated-text {
+    opacity: 0; /* Initially hide the text */
+    animation: fadeIn 2.5s ease-in-out forwards 100; /* Apply animation */
+    font-size: 20px;
+    /* padding: 20px; */
+    font-style: italic;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.h1{
+    font-style:italic;
+    font-weight: 500;
+    font-size: 60px;
+}
+.span{
+    color: blue;
+}
 
 
 
